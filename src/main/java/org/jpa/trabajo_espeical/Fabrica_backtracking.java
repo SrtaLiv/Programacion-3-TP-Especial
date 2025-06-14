@@ -40,6 +40,11 @@ public class Fabrica_backtracking {
             }
 
         } else {
+            // PODA por solución actual
+            if (!soluciones.isEmpty() && recorridoActual.size() >= soluciones.size()) {
+                return;
+            }
+
             for (Maquina maq : maquinas){
                 contadorPiezasActuales += maq.getPieza();
 
@@ -66,15 +71,35 @@ public class Fabrica_backtracking {
         List<Maquina> maquinas = new LinkedList<>();
         // guardar las maquinas
 
-        BufferedReader reader = new BufferedReader(new FileReader("src/main/resources/archivo.txt"));
-        String linea;
+        BufferedReader br = new BufferedReader(new FileReader("src/main/resources/archivo.txt"));
 
-        while((linea = reader.readLine()) != null) {
-            System.out.println(linea);
+        // Leer primera línea
+        System.out.println("Maquinas disponibles:");
+        String primera = br.readLine();
+        int piezasRequeridas = Integer.parseInt(primera.trim());
+
+        // Después leer el resto de líneas
+        String linea;
+        while((linea = br.readLine()) != null) {
+            String[] partes = linea.split(",");
+            String nombre = partes[0].trim();
+            int piezas = Integer.parseInt(partes[1].trim());
+            maquinas.add(new Maquina(piezas, nombre));
+            System.out.println(nombre + " -> " + piezas);
+        }
+        br.close();
+
+        // Ejecutar algoritmo
+        List<Maquina> resultado = fabricaBacktracking.secuenciarMaquinas(maquinas, piezasRequeridas);
+        // Mostrar resultado
+        System.out.println(" ");
+        System.out.println("Cantidad de maquinas en funcionamiento: " + resultado.size());
+        System.out.println("Mejor secuencia de máquinas para " + piezasRequeridas + " piezas:");
+        for (Maquina maq : resultado) {
+            System.out.println(maq.getNombre() + " (" + maq.getPieza() + ")");
         }
 
-        reader.close();
-
+        System.out.println("Total de llamados recursivos: " + fabricaBacktracking.getContadorGlobal());
 
         /*
         PRUEBAS DESDE JAVA

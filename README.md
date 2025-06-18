@@ -113,13 +113,6 @@ Antes de iniciar la selección:
 
 ---
 
-## ⚠️ Consideraciones
-
-- La estrategia greedy **no siempre encuentra la solución óptima** si hay combinaciones mejores que requieren elegir candidatos más chicos al inicio.
-- Es ideal cuando se puede demostrar que la estrategia local (mayores primero) lleva a una solución global óptima.
-
----
-
 ## 🖼️ Visualización del proceso (opcional)
 
 Podés agregar un diagrama del algoritmo aquí si lo tenés:

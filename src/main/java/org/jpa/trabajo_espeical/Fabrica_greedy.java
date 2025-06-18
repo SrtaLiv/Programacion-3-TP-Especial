@@ -86,38 +86,5 @@ public class Fabrica_greedy {
 
             System.out.println("Estados generados: " + fabricaGreedy.getContadorGlobal());
 
-           /*
-            // Crear lista de máquinas
-            List<Maquina> maquinas = new ArrayList<>();
-            maquinas.add(new Maquina(7, "Cortadora"));
-            maquinas.add(new Maquina(3, "Pulidora"));
-            maquinas.add(new Maquina(2, "Torno"));
-            maquinas.add(new Maquina(1, "Fresadora"));
-            maquinas.add(new Maquina(4, "Taladro"));
-            // Caramelin, 7;
-            // Coco, 8;
-
-            //streams
-            // Cantidad de piezas requeridas
-            int piezasRequeridas = 9;
-
-            // Crear objeto de Fabrica_greedy
-            Fabrica_greedy fabrica = new Fabrica_greedy();
-
-            // Ejecutar secuenciación
-            List<Maquina> resultado = fabrica.secuenciarMaquinas(maquinas, piezasRequeridas);
-
-            // Mostrar resultado
-            if (resultado != null && !resultado.isEmpty()) {
-                System.out.println("Máquinas seleccionadas:");
-                for (Maquina m : resultado) {
-                    System.out.println(m.getNombre() + " - Piezas: " + m.getPieza());
-                }
-            } else {
-                System.out.println("No se encontró una secuencia válida.");
-            }
-            System.out.println(fabrica.getContadorGlobal());
-
-*/
     }
 }

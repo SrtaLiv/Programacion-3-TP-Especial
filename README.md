@@ -61,7 +61,7 @@ Se implementan dos tipos de poda para optimizar el algoritmo:
 Esta estrategia permite hallar todas las soluciones posibles, pero se optimiza mediante podas para buscar la solución más eficiente en términos de cantidad de máquinas utilizadas.
 
 
-# Estrategia de Resolución: Greedy (Codiciosa)
+# Estrategia de Resolución: Greedy
 
 ## 📌 Descripción General
 
@@ -113,7 +113,7 @@ Antes de iniciar la selección:
 
 ---
 
-## 🖼️ Visualización del proceso (opcional)
+## 🖼️ Visualización del proceso
 
 ![Greedy proceso](src/main/resources/SELECCION%20DE%20CANDIDATOS%20-%20GREEDY.PNG)
 

@@ -124,9 +124,7 @@ Antes de iniciar la selección:
 
 Podés agregar un diagrama del algoritmo aquí si lo tenés:
 
-```markdown
 ![Greedy proceso](src/main/resources/SELECCION%20DE%20CANDIDATOS%20-%20GREEDY.PNG)
-
 
 
 

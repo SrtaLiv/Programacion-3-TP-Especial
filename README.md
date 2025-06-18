@@ -115,8 +115,6 @@ Antes de iniciar la selección:
 
 ## 🖼️ Visualización del proceso (opcional)
 
-Podés agregar un diagrama del algoritmo aquí si lo tenés:
-
 ![Greedy proceso](src/main/resources/SELECCION%20DE%20CANDIDATOS%20-%20GREEDY.PNG)
 
 
